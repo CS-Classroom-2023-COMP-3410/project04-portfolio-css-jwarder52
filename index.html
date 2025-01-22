@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 bg-repeat" style="background-image: url('trampoline.jpg'); background-size: 100px 100px;">
+    <!-- Main Wrapper -->
+    <div class="m-5 p-6 bg-beige rounded-lg shadow-lg border-4 border-transparent">
+        <!-- Main Heading -->
+        <h1 class="text-center text-3xl font-bold mb-4">Home Page</h1>
+        <hr class="my-4">
+        <!-- Subheading -->
+        <h2 class="text-center text-2xl mb-4">Jack Warder</h2>
+        <!-- Guitar Collection Section -->
+        <h3 class="text-center text-xl mb-4">Guitar Collection (I Wish)</h3>
+        <div class="overflow-auto">
+            <table class="w-full bg-burlywood text-center border-collapse border border-gray-200">
+                <tr>
+                    <td><img src="guitar-1.jpeg" alt="Guitar 1" class="w-24 h-auto mx-auto"></td>
+                    <td><img src="guitar-2.jpeg" alt="Guitar 2" class="w-24 h-auto mx-auto"></td>
+                    <td><img src="guitar-3.jpeg" alt="Guitar 3" class="w-24 h-auto mx-auto"></td>
+                    <td><img src="guitar-4.jpeg" alt="Guitar 4" class="w-24 h-auto mx-auto"></td>
+                    <td><img src="guitar-5.jpeg" alt="Guitar 5" class="w-24 h-auto mx-auto"></td>
+                </tr>
+                <tr>
+                    <td class="p-2">2020 Gibson Les Paul Goryo Yuto</td>
+                    <td class="p-2">Custom PRS 24-08</td>
+                    <td class="p-2">Orangewood Morgan Mahogany</td>
+                    <td class="p-2">2019 Tobias Berg</td>
+                    <td class="p-2">Jackson Phil Collen Signature</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Video Games Section -->
+        <h3 class="text-center text-xl my-4">Top 5 Video Games</h3>
+        <div class="overflow-auto">
+            <table class="w-full bg-burlywood text-center border-collapse border border-gray-200">
+                <tr>
+                    <td><img src="videogame-1.jpeg" alt="Video Game 1" class="w-24 h-auto mx-auto"></td>
+                    <td><img src="videogame-2.jpeg" alt="Video Game 2" class="w-32 h-24 mx-auto"></td>
+                    <td><img src="videogame-3.jpeg" alt="Video Game 3" class="w-32 h-24 mx-auto"></td>
+                    <td><img src="videogame-4.jpeg" alt="Video Game 4" class="w-24 h-auto mx-auto"></td>
+                    <td><img src="videogame-5.jpeg" alt="Video Game 5" class="w-24 h-auto mx-auto"></td>
+                </tr>
+                <tr>
+                    <td class="p-2">Call of Duty BO2</td>
+                    <td class="p-2">Backyard Baseball '97</td>
+                    <td class="p-2">Minecraft</td>
+                    <td class="p-2">Call of Duty MW2</td>
+                    <td class="p-2">Wii Sports</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- Footer Section -->
+        <footer class="mt-6">
+            <h2 class="text-center text-xl mb-4">Links</h2>
+            <!-- Responsive Hamburger Menu -->
+            <div class="relative">
+                <button id="menu-toggle" class="bg-blue-500 text-white py-2 px-4 rounded-md w-full">
+                    Menu
+                </button>
+                <ul id="menu" class="hidden flex-col bg-beige text-center mt-2 rounded-md shadow-lg">
+                    <li class="border-b"><a href="aboutme.html" class="block py-2 text-blue-600 hover:text-blue-800">About Me Page</a></li>
+                    <li class="border-b"><a href="hobby.html" class="block py-2 text-blue-600 hover:text-blue-800">Gymnastics Page</a></li>
+                    <li class="border-b"><a href="quotes.html" class="block py-2 text-blue-600 hover:text-blue-800">Book/Movie Page</a></li>
+                    <li><a href="contact.html" class="block py-2 text-blue-600 hover:text-blue-800">Contact Me</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript for toggling menu
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

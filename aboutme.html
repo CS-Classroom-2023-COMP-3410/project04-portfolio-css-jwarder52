@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: CadetBlue;
+        }
+    </style>
+</head>
+<body class="m-0 p-4 bg-cadetblue">
+    <!-- Main Container -->
+    <div class="bg-beige rounded-lg shadow-lg p-6">
+        <!-- Header -->
+        <h1 class="text-center text-3xl font-bold mb-6 break-words">My Portfolio</h1>
+        <hr class="my-6">
+
+        <!-- Main Content -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 bg-cyan-100 p-4 rounded-lg">
+            <!-- Left Column: Personal Information -->
+            <div>
+                <!-- Jack's Information -->
+                <div class="flex flex-col sm:flex-row items-center mb-6">
+                    <img src="My-Picture.jpeg" alt="Picture of Jack Warder" class="w-36 h-auto rounded-lg shadow-md mb-4 sm:mb-0 sm:mr-4">
+                    <div class="text-center break-words w-full">
+                        <p><strong>Name:</strong> Jack Warder</p>
+                        <p><strong>Age:</strong> 23</p>
+                        <p><strong>Class:</strong> Senior</p>
+                        <p><strong>Area of Study:</strong> Computer Science</p>
+                        <p><strong>Description:</strong> Jack is a big fan of steak, likes to listen to rock music, plays too many video games, and spoils his dog Maizy a bit too much.</p>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- Maizy's Information -->
+                <div class="flex flex-col sm:flex-row items-center">
+                    <img src="maizy.jpeg" alt="Picture of Maizy" class="w-36 h-auto rounded-lg shadow-md mb-4 sm:mb-0 sm:mr-4">
+                    <div class="text-center break-words w-full">
+                        <p><strong>Name:</strong> Maizy</p>
+                        <p><strong>Age:</strong> 12 (84 Dog)</p>
+                        <p><strong>Class:</strong> Senior 2025</p>
+                        <p><strong>Area of Study:</strong> Eating Everything</p>
+                        <p><strong>Description:</strong> Maizy likes food, talks instead of barks, sniffs every yard on walks, and considers herself the royal ruler of her household.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Favorites and Hobbies -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Favorites and Hobbies Lists -->
+                <div class="text-center break-words p-4">
+                    <h2 class="text-lg font-semibold mb-2">Hobbies</h2>
+                    <ul class="list-disc list-inside">
+                        <li>Gymnastics</li>
+                        <li>Gaming</li>
+                        <li>Guitar</li>
+                    </ul>
+                </div>
+                <div class="text-center break-words p-4">
+                    <h2 class="text-lg font-semibold mb-2">Favorite Movies</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>Inception</li>
+                        <li>Midsommer</li>
+                        <li>Lion King</li>
+                    </ol>
+                </div>
+                <div class="text-center break-words p-4">
+                    <h2 class="text-lg font-semibold mb-2">Favorite Books</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>Harry Potter</li>
+                        <li>Ender's Game</li>
+                        <li>Tender is the Flesh</li>
+                    </ol>
+                </div>
+                <div class="text-center break-words p-4">
+                    <h2 class="text-lg font-semibold mb-2">Favorite Video Games</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>COD BO2</li>
+                        <li>Backyard Baseball</li>
+                        <li>Minecraft</li>
+                    </ol>
+                </div>
+                <div class="text-center break-words p-4">
+                    <h2 class="text-lg font-semibold mb-2">Favorite Songs</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>If it Makes You Happy</li>
+                        <li>Otherside</li>
+                        <li>Sometimes</li>
+                    </ol>
+                </div>
+                <div class="text-center break-words p-4">
+                    <h2 class="text-lg font-semibold mb-2">Favorite Artists</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>Mom Jeans</li>
+                        <li>Michael Cera Palin</li>
+                        <li>Hans Zimmer</li>
+                    </ol>
+                </div>
+                <div class="text-center break-words p-4">
+                    <h2 class="text-lg font-semibold mb-2">Favorite Food</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>Steak</li>
+                        <li>Chicken Schnitzel</li>
+                        <li>Mint Chip Ice Cream</li>
+                    </ol>
+                </div>
+                <div class="text-center break-words p-4">
+                    <h2 class="text-lg font-semibold mb-2">Favorite Sodas</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>Dr. Pepper</li>
+                        <li>Coke Cherry</li>
+                        <li>Dr. Pepper Cream Soda</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-6">
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-6">
+            <h2 class="text-xl font-bold mb-4">Links</h2>
+            <!-- Responsive Hamburger Menu -->
+            <div class="relative">
+                <button id="menu-toggle" class="bg-blue-500 text-white py-2 px-4 rounded-md w-full">
+                    Menu
+                </button>
+                <ul id="menu" class="hidden flex-col bg-beige text-center mt-2 rounded-md shadow-lg">
+                    <li class="border-b"><a href="index.html" class="block py-2 text-blue-600 hover:text-blue-800">Home Page</a></li>
+                    <li class="border-b"><a href="hobby.html" class="block py-2 text-blue-600 hover:text-blue-800">Gymnastics Page</a></li>
+                    <li class="border-b"><a href="quotes.html" class="block py-2 text-blue-600 hover:text-blue-800">Book/Movie Page</a></li>
+                    <li><a href="contact.html" class="block py-2 text-blue-600 hover:text-blue-800">Contact Me</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript for toggling menu
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

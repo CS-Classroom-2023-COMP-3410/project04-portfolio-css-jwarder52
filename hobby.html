@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymnastics</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body class="bg-cornflowerblue text-black min-h-screen">
+
+    <!-- Main Content Container -->
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <!-- Main Heading -->
+        <h1 class="text-3xl font-bold text-center mb-6">Gymnastics</h1>
+        <hr class="mb-6">
+
+        <!-- Gymnastics Information -->
+        <h3 class="text-xl font-semibold text-center mb-4">Gymnastics Information</h3>
+        <div class="overflow-x-auto mb-6">
+            <table class="w-full bg-burlywood text-black rounded-lg shadow-lg">
+                <tbody>
+                    <tr>
+                        <!-- Gymnastics Image -->
+                        <td class="w-1/2 text-center p-4">
+                            <img src="gymanstics.jpg" alt="Gymnastics" class="w-3/4 h-auto rounded-lg shadow-md">
+                        </td>
+                        <!-- Gymnastics Details -->
+                        <td class="p-4">
+                            <p><strong>Age Started:</strong> 10</p>
+                            <p><strong>Favorite Event:</strong> Trampoline</p>
+                            <p><strong>Teams Competed For:</strong> SGT and DU</p>
+                            <p><strong>Favorite Skill:</strong> Half Half Pike</p>
+                            <p><strong>Highest Level:</strong> Open Elite</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Trampoline Routine -->
+        <h3 class="text-xl font-semibold text-center mb-4">Trampoline Routine</h3>
+        <div class="overflow-x-auto">
+            <table class="w-full bg-burlywood text-black rounded-lg shadow-lg">
+                <thead class="bg-[#3C280D] text-white">
+                    <tr>
+                        <th class="p-3 text-left">Compulsory</th>
+                        <th class="p-3 text-left">Optional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Routine Details -->
+                    <tr>
+                        <td class="p-3 border-b">3/4 Back Layout</td>
+                        <td class="p-3 border-b">Full Barani Pike</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Cody Tuck</td>
+                        <td class="p-3 border-b">Back Layout</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Back Tuck</td>
+                        <td class="p-3 border-b">Half Out Pike</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Barani Tuck</td>
+                        <td class="p-3 border-b">Half Half Tuck</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Back Pike</td>
+                        <td class="p-3 border-b">Half Out Tuck</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Barani Pike</td>
+                        <td class="p-3 border-b">Double Pike</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Back Straight</td>
+                        <td class="p-3 border-b">Barani Tuck</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Back Full</td>
+                        <td class="p-3 border-b">Double Tuck</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Barani Straight</td>
+                        <td class="p-3 border-b">Barani Straight</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Double Tuck</td>
+                        <td class="p-3 border-b">Half Half Pike</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr class="my-6">
+
+        <!-- Footer Section -->
+        <footer class="text-center">
+            <h2 class="text-xl font-bold text-black mb-4">Links</h2>
+            <!-- Menu Button -->
+            <div class="relative">
+                <button id="menu-toggle" class="bg-blue-500 text-white font-bold py-1 px-4 rounded-lg hover:bg-blue-600 transition duration-200">
+                    Menu
+                </button>
+                <!-- Links Menu -->
+                <ul id="menu" class="hidden flex-col bg-beige text-center mt-2 rounded-md shadow-lg">
+                    <li class="border-b"><a href="index.html" class="block py-2 text-blue-600 hover:text-blue-800">Home Page</a></li>
+                    <li class="border-b"><a href="aboutme.html" class="block py-2 text-blue-600 hover:text-blue-800">About Me Page</a></li>
+                    <li class="border-b"><a href="quotes.html" class="block py-2 text-blue-600 hover:text-blue-800">Book/Movie Page</a></li>
+                    <li><a href="contact.html" class="block py-2 text-blue-600 hover:text-blue-800">Contact Me</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Toggle menu visibility
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

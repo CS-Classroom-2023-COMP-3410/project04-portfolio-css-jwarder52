@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest Movie/Book Quotes</title>
+</head>
+<body class="bg-[#3C280D] text-white min-h-screen p-6">
+
+    <!-- Main Content Container -->
+    <div class="bg-burlywood p-6 rounded-lg shadow-lg">
+        <!-- Main Heading -->
+        <h1 class="text-3xl font-bold text-center text-black mb-6">Movies/Books</h1>
+        <hr class="mb-6">
+
+        <!-- Best Quotes Table -->
+        <div class="overflow-x-auto mb-6">
+            <table class="w-full bg-burlywood text-black rounded-lg shadow-lg">
+                <caption class="text-lg font-bold py-2">Best Quotes</caption>
+                <thead class="bg-[#3C280D] text-white">
+                    <tr>
+                        <th class="p-3 text-left">Title</th>
+                        <th class="p-3 text-left">Character</th>
+                        <th class="p-3 text-left">Quote</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-3 border-b">Lion King</td>
+                        <td class="p-3 border-b">Rafiki</td>
+                        <td class="p-3 border-b">"Oh yes, the past can hurt, but the way I see it you can either run from it or learn from it."</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Harry Potter</td>
+                        <td class="p-3 border-b">Dumbledore</td>
+                        <td class="p-3 border-b">"It is the unknown we fear when we look upon death and darkness, nothing more."</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Ender's Game</td>
+                        <td class="p-3 border-b">Peterm</td>
+                        <td class="p-3 border-b">"Perhaps it's impossible to wear an identity without becoming what you pretend to be."</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Inception</td>
+                        <td class="p-3 border-b">Cobb</td>
+                        <td class="p-3 border-b">"An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you."</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr class="mb-6">
+
+        <!-- Best Villains Table -->
+        <div class="overflow-x-auto mb-6">
+            <table class="w-full bg-burlywood text-black rounded-lg shadow-lg">
+                <caption class="text-lg font-bold py-2">Best Villains</caption>
+                <thead class="bg-[#3C280D] text-white">
+                    <tr>
+                        <th class="p-3 text-left">Title</th>
+                        <th class="p-3 text-left">Media</th>
+                        <th class="p-3 text-left">Character</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-3 border-b">Star Wars</td>
+                        <td class="p-3 border-b">Movie</td>
+                        <td class="p-3 border-b">Darth Vader</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Silence of the Lambs</td>
+                        <td class="p-3 border-b">Movie</td>
+                        <td class="p-3 border-b">Hannibal Lecter</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Harry Potter</td>
+                        <td class="p-3 border-b">Book</td>
+                        <td class="p-3 border-b">Voldemort</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Halloween</td>
+                        <td class="p-3 border-b">Movie</td>
+                        <td class="p-3 border-b">Michael Myers</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 border-b">Puss in Boots</td>
+                        <td class="p-3 border-b">Movie</td>
+                        <td class="p-3 border-b">Death</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr class="mb-6">
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <h2 class="text-xl font-bold text-black mb-4">Links</h2>
+            <!-- Menu Button -->
+            <div class="relative">
+                <button id="menu-toggle" class="bg-blue-500 text-white font-bold py-1 px-4 rounded-lg hover:bg-blue-600 transition duration-200">
+                    Menu
+                </button>
+                <ul id="menu" class="hidden flex-col bg-beige text-center mt-2 rounded-md shadow-lg">
+                    <li class="border-b"><a href="index.html" class="block py-2 text-blue-600 hover:text-blue-800">Home Page</a></li>
+                    <li class="border-b"><a href="hobby.html" class="block py-2 text-blue-600 hover:text-blue-800">Gymnastics Page</a></li>
+                    <li class="border-b"><a href="quotes.html" class="block py-2 text-blue-600 hover:text-blue-800">Book/Movie Page</a></li>
+                    <li><a href="contact.html" class="block py-2 text-blue-600 hover:text-blue-800">Contact Me</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Toggle menu visibility
+        document.getElementById('menu-toggle').addEventListener('click', () => {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
